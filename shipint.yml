@@ -4,10 +4,9 @@
   gather_facts: true
     
   tasks:
-  - name: "show ip interface brief"
+  - name: "show ip interface"
     ios_command: 
       commands:
-        - show ip int brief
-        - show version
+        - show ip interface
     register: result
   - debug: msg="{{result.stdout}}"
