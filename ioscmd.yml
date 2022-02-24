@@ -1,0 +1,11 @@
+---
+- name: Test IOS command.
+  hosts: all
+  tasks:
+    - name: show ip interface brief
+      ios_command:
+        lines:
+          - show ip interface brief
+      register: result
+      debug:
+        var: result.stdout
