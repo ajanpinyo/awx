@@ -8,3 +8,5 @@
     ios_command: 
       commands:
         - show ip int brief
+    register: result
+    debug: var=result
