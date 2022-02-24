@@ -1,7 +1,7 @@
 --- 
 - name: "Test IOS command."
   hosts: all
-  gahter_facts: "no"
+  gather_facts: false
   connection: network_cli
   
   tasks:
