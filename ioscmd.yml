@@ -9,3 +9,4 @@
       commands:
         - show ip int brief
     register: result
+    debug: result.stdout
