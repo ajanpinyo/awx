@@ -6,5 +6,5 @@
   tasks:
   - name: "show ip interface brief"
     ios_command: 
-      line:
+      command:
         - show ip int brief
