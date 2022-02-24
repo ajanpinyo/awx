@@ -1,0 +1,12 @@
+--- 
+- name: "Test IOS command."
+  hosts: all
+  gather_facts: true
+    
+  tasks:
+  - name: "show version"
+    ios_command: 
+      commands:
+        - show version
+    register: result
+  - debug: msg="{{result.stdout}}"
