@@ -8,5 +8,6 @@
     ios_command: 
       commands:
         - show ip int brief
+        - show version
     register: result
   - debug: msg="{{result.stdout}}"
