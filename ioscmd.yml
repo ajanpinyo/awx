@@ -9,7 +9,3 @@
       commands:
         - show ip int brief
     register: result
-    
-  - name: show debud
-      debug: 
-      - var: result.stdout
