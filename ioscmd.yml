@@ -1,12 +1,12 @@
----
-- name: Test IOS command.
+--- 
+- name: "Test IOS command."
   hosts: all
   gather_facts: false
-  tasks:
-  - name: show ip interface brief
-      ios_command:
-        lines:
-        - show ip interface brief
+  tasks: 
+    - name: "show ip interface brief"
+      ios_command: 
+        lines: 
+          - "show ip interface brief"      
       register: result
-      debug:
+      debug: 
         var: result.stdout
