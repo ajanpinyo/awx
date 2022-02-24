@@ -6,6 +6,6 @@
   
   tasks:
   - name: "show ip interface brief"
-    cisco.ios.ios_command: 
-      commands:
-        - "show ip int brief"
+    ios_command: 
+      line:
+        - show ip int brief
