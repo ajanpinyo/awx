@@ -3,10 +3,10 @@
   hosts: all
   gather_facts: false
   tasks: 
-    - name: "show ip interface brief"
-      ios_command: 
-        lines: 
-          - "show ip interface brief"      
-      register: result
-      debug: 
-        var: result.stdout
+  - name: "show ip interface brief"
+    ios_command: 
+      lines: 
+        - "show ip interface brief"      
+    register: result
+    debug: 
+      var: result.stdout
